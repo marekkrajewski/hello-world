@@ -1,0 +1,35 @@
+.padding-20 {
+  padding: $spacing-20;
+}
+
+// top
+
+.padding-top-100p {
+  padding-top: 100%;
+}
+
+// bottom
+
+.padding-bottom-10 {
+  padding-bottom: $spacing-10;
+}
+
+.padding-bottom-20 {
+  padding-bottom: $spacing-20;
+}
+
+.padding-bottom-30 {
+  padding-bottom: $spacing-30;
+}
+
+// vertical
+
+.padding-y-40 {
+  padding-top: $spacing-40;
+  padding-bottom: $spacing-40;
+}
+
+.padding-y-50 {
+  padding-top: $spacing-50;
+  padding-bottom: $spacing-50;
+}

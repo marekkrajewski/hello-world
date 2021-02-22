@@ -1,0 +1,5 @@
+@function pixelsToRem($sizeInPixels) {
+  $remSizeInPixels: 16;
+
+  @return #{$sizeInPixels / $remSizeInPixels}rem;
+}

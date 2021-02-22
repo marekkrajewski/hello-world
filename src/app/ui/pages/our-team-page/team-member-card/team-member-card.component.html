@@ -1,0 +1,36 @@
+<article>
+  <div class="relative padding-top-100p">
+    <img
+      class="absolute top-0 left-0 height-100 width-100 object-fit-cover"
+      [src]="teamMemberCard.imageUrl.w400"
+      [alt]="teamMemberCard.block.title + '\'s photo'"
+    />
+  </div>
+
+  <div class="padding-20">
+    <h2 class="font-weight-bold color-primary padding-bottom-10">
+      {{ teamMemberCard.block.title }}
+    </h2>
+
+    <p class="padding-bottom-30">
+      {{ teamMemberCard.block.description }}
+    </p>
+
+    <footer>
+      <a
+        [href]="'mailto:' + teamMemberCard.block.link"
+        class="block color-accent padding-bottom-10"
+        appExternalLink
+      >
+        {{ teamMemberCard.block.link }}
+      </a>
+      <a
+        [href]="'tel:' + teamMemberCard.block.text"
+        class="block"
+        appExternalLink
+      >
+        {{ teamMemberCard.block.text }}
+      </a>
+    </footer>
+  </div>
+</article>

@@ -1,0 +1,24 @@
+<ng-container *ngIf="ourTeamPage; else loading">
+  <header class="padding-y-50">
+    <h1 class="font-weight-bold color-primary font-size-32 text-align-center">
+      {{ ourTeamPage.attributes.title }}
+    </h1>
+  </header>
+  <main>
+    <ul class="member-cards-grid grid grid-gap-20">
+      <li
+        *ngFor="
+          let teamMemberCard of ourTeamPage.attributes.memberCards.toIterable()
+        "
+      >
+        <app-team-member-card
+          [teamMemberCard]="teamMemberCard"
+        ></app-team-member-card>
+      </li>
+    </ul>
+  </main>
+</ng-container>
+
+<ng-template #loading>
+  <app-loader></app-loader>
+</ng-template>

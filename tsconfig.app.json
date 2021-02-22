@@ -1,0 +1,17 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": ["node"],
+    "paths": {
+      "@environment": ["src/environments/environment"],
+      "@domain/*": ["src/app/domain/*"],
+      "@rest/*": ["src/app/rest/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@ui/*": ["src/app/ui/*"]
+    }
+  },
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.d.ts"]
+}
