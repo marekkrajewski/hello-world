@@ -11,7 +11,7 @@ import {
   getOurTeamPageMock,
 } from '../../domain/pages/get-our-team-page';
 
-type ApiGetResponse<ResponsePayloadT> = {
+export type ApiGetResponse<ResponsePayloadT> = {
   data: ResponsePayloadT;
 };
 
